@@ -1,0 +1,84 @@
+Ingrese el número de servidores:
+2
+
+Servidor 1:
+ID: S1
+Capacidad CPU: 100
+Capacidad Memoria: 200
+
+Servidor 2:
+ID: S2
+Capacidad CPU: 120
+Capacidad Memoria: 180
+
+Ingrese el número de solicitudes:
+3
+
+Solicitud 1:
+ID: R1
+Requiere CPU: 20
+Requiere Memoria: 50
+Prioridad (mayor = más urgente): 2
+
+Solicitud 2:
+ID: R2
+Requiere CPU: 30
+Requiere Memoria: 60
+Prioridad (mayor = más urgente): 3
+
+Solicitud 3:
+ID: R3
+Requiere CPU: 25
+Requiere Memoria: 70
+Prioridad (mayor = más urgente): 1
+
+Ingrese la matriz de costos (tiempo estimado por asignación):
+Costos para el servidor S1 (separados por espacio):
+10 5 12
+Costos para el servidor S2 (separados por espacio):
+8 7 9
+Welcome to the CBC MILP Solver 
+Version: 2.10.3
+Build Date: Dec 15 2019
+
+command line - C:\Users\Alejandro\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pulp\apis\../solverdir/cbc/win/i64/cbc.exe C:\Users\Alejandro\AppData\Local\Temp\c76c9e2b7ea3441e943de6aaf0221f0e-pulp.mps -timeMode elapsed -branch -printingOptions all -solution C:\Users\Alejandro\AppData\Local\Temp\c76c9e2b7ea3441e943de6aaf0221f0e-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 12 COLUMNS
+At line 49 RHS
+At line 57 BOUNDS
+At line 64 ENDATA
+Problem MODEL has 7 rows, 6 columns and 18 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Continuous objective value is 14.6667 - 0.00 seconds
+Cgl0004I processed model has 0 rows, 0 columns (0 integer (0 of which binary)) and 0 elements
+Cbc3007W No integer variables - nothing to do
+Cuts at root node changed objective from 14.6667 to -1.79769e+308
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+ZeroHalf was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                14.66666667
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.02
+Time (Wallclock seconds):       0.02
+
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.04   (Wallclock seconds):       0.04
+
+
+Asignaciones óptimas:
+ - R2 asignada a S1
+ - R1 asignada a S2
+ - R3 asignada a S2
+
+Costo total ponderado: 14.67
