@@ -1,0 +1,21 @@
+Número de programadores: 3
+Número de tareas: 4
+
+Matriz de costos combinados (eficiencia + transporte):
+Fila 1: 8 6 10 9
+Fila 2: 9 12 13 7
+Fila 3: 14 9 16 5
+
+Capacidad máxima de tareas por programador:
+2 1 2
+
+Cantidad de programadores requeridos por tarea:
+1 2 1 1
+
+Asignaciones óptimas:
+Programador 2 → Tarea 3 | Cantidad: 1 | Costo: 5 | Subtotal: 5
+Programador 0 → Tarea 1 | Cantidad: 2 | Costo: 6 | Subtotal: 12
+Programador 1 → Tarea 0 | Cantidad: 1 | Costo: 9 | Subtotal: 9
+Programador 2 → Tarea 2 | Cantidad: 1 | Costo: 16 | Subtotal: 16
+
+Costo total mínimo: 42
